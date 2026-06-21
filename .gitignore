@@ -1,0 +1,23 @@
+# Maven build output - never commit compiled files
+target/
+*.jar
+*.war
+*.class
+
+# Environment variables - NEVER commit passwords
+.env
+*.env
+
+# IDE files - irrelevant to other developers
+.idea/
+*.iml
+.vscode/
+*.xml~
+
+# Logs - generated at runtime, not source code
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
