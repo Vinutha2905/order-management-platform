@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS userdb;
+CREATE DATABASE IF NOT EXISTS productdb;
+CREATE DATABASE IF NOT EXISTS orderdb;
+CREATE DATABASE IF NOT EXISTS inventorydb;
+CREATE DATABASE IF NOT EXISTS notificationdb;
+
+GRANT ALL PRIVILEGES ON userdb.* TO 'ompuser'@'%';
+GRANT ALL PRIVILEGES ON productdb.* TO 'ompuser'@'%';
+GRANT ALL PRIVILEGES ON orderdb.* TO 'ompuser'@'%';
+GRANT ALL PRIVILEGES ON inventorydb.* TO 'ompuser'@'%';
+GRANT ALL PRIVILEGES ON notificationdb.* TO 'ompuser'@'%';
+
+FLUSH PRIVILEGES;
